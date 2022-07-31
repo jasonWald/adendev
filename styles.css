@@ -1,0 +1,264 @@
+#cursor {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    will-change: transform;
+    mix-blend-mode: difference;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .cursor__circle {
+      width: 64px;
+      height: 64px;
+      margin-top: -50%;
+      margin-left: -50%;
+      border-radius: 50%;
+      border: solid 1px rgba(227, 222, 193, 0.64);
+      transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        width 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        height 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    #cursor.arrow .cursor__circle{
+      width: 128px;
+      height: 128px;
+      background-color: #073099;
+      border-color: #073099;
+    }
+    
+    #cursor.arrow::after{
+      content: '';
+      position: absolute;
+      left: -50%;
+      top: -50%;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://svgshare.com/i/MzQ.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    
+    #cursor.subtle .cursor__circle{
+      opacity: 0.16;
+    }
+    
+    #cursor.overlay .cursor__circle{
+      width: 48px;
+      height: 48px;
+      background-color: rgba(227, 222, 193, 0.08);
+      border-color: transparent;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+.hero__section {
+
+}
+
+.hero__top {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__top h1 {
+    font-family: 'Raleway Light';
+    font-weight: 400;
+    font-size: 180px;
+    letter-spacing: 0.165em;
+}
+
+.hero__gif {
+    position: relative;
+    width: 1817px;
+    height: 697px;
+    background-image: url(./media/faces.gif);
+}
+
+.about {
+    margin-top: 3rem;
+}
+
+.flex__container {
+    width: 80%;
+    display: flex;
+}
+
+.aesthetics {
+    font-family: 'Raleway Light';
+    font-size: 70px;
+}
+
+.fluid__simulation {
+    margin-top: 2rem;
+}
+
+.left__container {
+    margin-top: 13vh;
+    padding: 0 3rem;
+}
+
+.left__container .info {
+    font-family: 'Raleway Light';
+    font-size: 65px;
+    line-height: 6rem;
+}
+
+.lower__imagination{
+    margin-top: 2rem;
+    margin-left: 14vw;
+    font-family: 'Raleway Light';
+    font-size: 55px;
+}
+
+.what__we {
+    margin-top: 5rem;
+}
+
+.balance__ {
+    font-family: 'Raleway Light';
+    font-size: 55px;
+}
+
+.we__do {
+    margin-top: 18vh;
+    font-family: 'Raleway Bold';
+    font-size: 100px;
+    float: right;
+    line-height: 120%;
+    
+}
+
+.we__do .bg__grey {
+    background-color: #d9d9d9;
+    color: black;
+    margin-bottom: 1.3rem;
+}
+
+.liquid__dance {
+    margin-top: 40rem;
+}
+
+.description__liq {
+    gap: .4em;
+    width: 90%;
+    font-family: 'Raleway Light';
+    font-size: 100px;
+    line-height: 117px;
+}
+
+.projects {
+    margin-top: 10vh;
+}
+
+.project__1 {
+    display: flex;
+}
+
+.description__prj {
+    margin-left: 3vw;
+    
+}
+
+.desc__low {
+    text-align: end;
+    margin-left: 3vw;
+    font-family: 'Raleway Light';
+    font-size: 45px;
+    width: 80%;
+    margin: 2em;
+}
+
+.marg__bot {
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+}
+
+.description__prj p {
+    font-family: 'Raleway Light';
+    font-size: 45px;
+    width: 80%;
+}
+
+.project__2 {
+    display: flex;
+}
+
+.nft-sec{
+    margin-top: 10vh;
+}
+.nft-desc{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nft-desc p {
+    font-family: 'Raleway Light';
+    font-size: 120px;
+    
+}
+.nft-right{
+    text-align: end;
+}
+
+.nft-left {
+    margin-top: 137px;
+}
+.nft-blur{
+    position: relative;
+    height: 831px;
+    width: 100%;
+    background-image: url(./media/blur.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nft-blur p {
+    font-family: 'Raleway Light';
+    font-size: 70px;
+}
+
+.contact{
+    margin-top: 8rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+.contact-us{
+    display: flex;
+    
+}
+.contact-bar{
+    padding: 1rem 2rem;
+    text-align: start;
+    width: 35%;
+}
+.contact-bar h3{
+    color: white;
+    font-family: 'Raleway Light';
+    font-size: 70px;
+}
+.contact-bar ul {
+    line-height: 50px;
+}
+.contact-bar ul li{
+    font-family: 'Raleway Light';
+    font-size: 25px;
+}
+.contact-bar p {
+    font-size: 25px;
+    font-family: 'Raleway Light';
+}
+
